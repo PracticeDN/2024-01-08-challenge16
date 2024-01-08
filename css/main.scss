@@ -185,6 +185,12 @@ body {
       }
 
       a {
+        transition: transform 0.3s ease;
+
+        &:hover {
+          position: relative;
+          transform: translateY(-1rem);
+        }
         @include respond-above("sm") {
         }
         @include respond-above("md") {
@@ -202,6 +208,7 @@ body {
             background-size: cover;
           }
         }
+
         .image {
           max-width: 100%;
           height: auto;
