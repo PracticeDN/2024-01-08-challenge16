@@ -1,0 +1,151 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+}
+.header .inner {
+  height: 10rem;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .header .inner {
+    width: 118rem;
+  }
+}
+.header .inner .logo-and-details {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header .inner .logo-and-details {
+    justify-content: space-between;
+  }
+}
+.header .inner .logo-and-details .logo {
+  width: 18rem;
+  height: 4rem;
+}
+.header .inner .logo-and-details .auths {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 10rem;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header .inner .logo-and-details .auths {
+    width: fit-content;
+    position: relative;
+    flex-direction: row;
+    top: 0;
+    display: flex;
+    gap: 4rem;
+  }
+}
+.header .inner .logo-and-details .auths a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: border 0.3s ease;
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .header .inner .logo-and-details .auths a {
+    margin: 0;
+  }
+}
+.header .inner .logo-and-details .auths a:hover {
+  text-decoration: underline;
+}
+.header .inner .logo-and-details .menu {
+  position: absolute;
+  right: 0;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .header .inner .logo-and-details .menu {
+    display: none;
+  }
+}
+.main .banner {
+  width: 100%;
+  height: 40vw;
+  background-image: url("https://ozcodingschool.com/static/front/images/ozcoding/startupcamp/pc_main_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.main .banner .oz-img {
+  width: 70%;
+  height: 70%;
+}
+.main .contents {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .main .contents {
+    width: 118rem;
+  }
+}
+.main .contents .links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+@media (min-width: 1200px) {
+  .main .contents .links {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main .contents .links a {
+    width: 33.3333333333%;
+  }
+}
+.main .contents .links a:first-child .image {
+  background-image: url("https://ozcodingschool.com/static/front/images/ozcoding/bizdevcamp/main_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .contents .links a .image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+@media (min-width: 1200px) {
+  .main .contents .links a .image {
+    height: 40rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
